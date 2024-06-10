@@ -1,7 +1,88 @@
-.parent {
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+* {
+    font-family: "Tiny5", Arial, Helvetica, sans-serif;
+}
+
+.gameboard {
+    
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #000000;
+    text-align: center;
+   
+}
+
+.tile {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color:beige;
+    text-align:center;
+    font-size:55px;
+    margin: 100px 0px 50px 0px
+}
+
+.container {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 1em 0 1em 0;
+}
+
+.background {
+    background-color: black;
+    height:100vh;
+    padding:5px;
+}
+
+.hide {
+    display:none;
+}
+
+.divborder {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.playerX {
+    background-color: #ff0000;
+}
+
+.playerO {
+    background-color: #0000ff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 0 0;
+    flex-direction: row;
 }
