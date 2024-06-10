@@ -11,78 +11,32 @@
     font-family: "Tiny5", Arial, Helvetica, sans-serif;
 }
 
-.gameboard {
-    
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
+
 
 body {
-    background-color: #000000;
+    background-color: beige;
     text-align: center;
    
 }
 
-.tile {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+.cell {
+    width:75px;
+    height:75px;
+    border:2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.title {
-    color:beige;
+#gameContainer {
+    font-family: "Tiny5", Arial;
     text-align:center;
-    font-size:55px;
-    margin: 100px 0px 50px 0px
 }
 
-.container {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    margin: 1em 0 1em 0;
-}
-
-.background {
-    background-color: black;
-    height:100vh;
-    padding:5px;
-}
-
-.hide {
-    display:none;
-}
-
-.divborder {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-}
-
-.playerX {
-    background-color: #ff0000;
-}
-
-.playerO {
-    background-color: #0000ff;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0 0 0;
-    flex-direction: row;
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width:225px;
+    margin:auto;
 }
