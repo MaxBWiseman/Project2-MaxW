@@ -7,16 +7,29 @@ const winningCombos = [
 let gameBoard = ['','','','','','','','',''];
 let currentPlayer = 'X';
 let gameActive = false;
+startGame();
 
 function startGame() {
-
+    cells.forEach(cell => cell.addEventListener('click', cellClick));
+    resetButton.addEventListener('click', restartGame);
+    messageText.textContent = `${currentPlayer}'s turn`;
 }
 
 function cellClick() {
+    const cellIndex = this.getAttribute("index");
+
+    if(gameBoard[cellIndex] !== '' || !gameActive) {
+        return;
+    }
+
+    updateBoard(this, cellIndex);
+    checkWinner();
 
 }
 
 function updateBoard(cell, index) {
+    options[index] = currentPlayer;
+    cell.textContent = currentPlayer;
 
 }
 
