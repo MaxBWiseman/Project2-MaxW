@@ -32,13 +32,14 @@ function cellClick() {
 
     updateBoard(this, cellIndex);
     checkWinner();
+    
 
 }
 
 function updateBoard(cell, index) {
     gameBoard[index] = currentPlayer;
     cell.textContent = currentPlayer;
-    changePlayer();
+    
 
 }
 
@@ -52,6 +53,7 @@ function checkWinner() {
     for (let i = 0; i < winningCombos.length; i++) {
         const [a, b, c] = winningCombos[i];
         if(gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+            
             messageText.textContent = `${currentPlayer} wins!`;
             gameActive = false;
             return;
@@ -62,6 +64,7 @@ function checkWinner() {
         gameActive = false;
         return;
     }
+    changePlayer();
 
 }
 
