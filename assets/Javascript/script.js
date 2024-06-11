@@ -13,6 +13,7 @@ console.log("game has loaded");
 cells.forEach(cell => {
     cell.addEventListener('click', cellClick);
 })
+resetButton.addEventListener('click', restartGame);
 
 
 function startGame() {
@@ -65,6 +66,13 @@ function checkWinner() {
 }
 
 function restartGame() {
-    
+    gameBoard = ['','','','','','','','',''];
+    currentPlayer = 'X';
+    gameActive = true;
+    messageText.textContent = `${currentPlayer}'s turn`;
+    cells.forEach(cell => {
+        cell.textContent = '';
+    })
+
 
 }   
