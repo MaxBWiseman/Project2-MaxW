@@ -1,4 +1,4 @@
-const cells = document.getElementsByClassName('cell')[0];
+const cells = Array.from(document.getElementsByClassName('cell'));
 const messageText = document.getElementById('messageText');
 const resetButton = document.getElementById('reset');
 const winningCombos = [ 
@@ -9,6 +9,11 @@ let currentPlayer = 'X';
 let gameActive = false;
 startGame();
 console.log("game has loaded");
+
+cells.forEach(cell => {
+    cell.addEventListener('click', cellClick);
+})
+
 
 function startGame() {
     
@@ -60,5 +65,6 @@ function checkWinner() {
 }
 
 function restartGame() {
+    
 
 }   
