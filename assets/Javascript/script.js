@@ -1,4 +1,4 @@
-const cells = document.getElementsClassName('cell');
+const cells = Array.from(document.getElementsByClassName('cell'));
 const messageText = document.getElementById('messageText');
 const resetButton = document.getElementById('reset');
 const winningCombos = [ 
@@ -10,9 +10,13 @@ let gameActive = false;
 startGame();
 
 function startGame() {
-    cells.forEach(cell => cell.addEventListener('click', cellClick));
+    cells.forEach((cell, index) => {
+        cell.setAttribute('index', index);
+        cell.addEventListener('click', cellClick);
+    });
     resetButton.addEventListener('click', restartGame);
     messageText.textContent = `${currentPlayer}'s turn`;
+    gameActive = true;
 }
 
 function cellClick() {
@@ -28,12 +32,15 @@ function cellClick() {
 }
 
 function updateBoard(cell, index) {
-    options[index] = currentPlayer;
+    gameBoard[index] = currentPlayer;
     cell.textContent = currentPlayer;
+    changePlayer();
 
 }
 
 function changePlayer() {
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    messageText.textContent = `${currentPlayer}'s turn`;
 
 }
 
