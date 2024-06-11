@@ -1,9 +1,14 @@
 const cells = Array.from(document.getElementsByClassName('cell'));
 const messageText = document.getElementById('messageText');
 const resetButton = document.getElementById('reset');
+const resetScoresButton = document.getElementById('resetScores');
 const winningCombos = [ 
     [0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6], [1, 4, 7], [2, 5, 8],[0, 4, 8], [2, 4, 6]
 ];
+let scores = {
+    "X": 0,
+    "O": 0
+}
 let gameBoard = ['','','','','','','','',''];
 let currentPlayer = 'X';
 let gameActive = false;
@@ -13,7 +18,12 @@ console.log("game has loaded");
 cells.forEach(cell => {
     cell.addEventListener('click', cellClick);
 })
-resetButton.addEventListener('click', restartGame);
+resetButton.addEventListener('click', () => {
+    restartGame();
+});
+resetScoresButton.addEventListener('click', () => {
+    resetScores();
+});
 
 
 function startGame() {
@@ -53,8 +63,9 @@ function checkWinner() {
     for (let i = 0; i < winningCombos.length; i++) {
         const [a, b, c] = winningCombos[i];
         if(gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
-            
             messageText.textContent = `${currentPlayer} wins!`;
+            scores[currentPlayer]++;
+            document.getElementById(`${currentPlayer}-score`).textContent = scores[currentPlayer];
             gameActive = false;
             return;
         }
@@ -77,5 +88,15 @@ function restartGame() {
         cell.textContent = '';
     })
 
-
 }   
+
+function resetScores() {
+    scores = {
+        "X": 0,
+        "O": 0
+    }
+    document.getElementById('X-score').textContent = 0;
+    document.getElementById('O-score').textContent = 0;
+}
+
+
