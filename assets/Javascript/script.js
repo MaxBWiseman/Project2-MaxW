@@ -1,3 +1,9 @@
+/*The elements required are grabbed here, cells being in an array form, Winning combos are
+ declared and score variable, game starts with a fresh array to store the users inputs, startGame
+ is called and a quick consolelog to the console just to make sure everything has loaded for dev
+ purposes, Event listieners for each individual cell is added on line 23 along with the
+ reset and resetscores buttons */
+
 const cells = Array.from(document.getElementsByClassName('cell'));
 const messageText = document.getElementById('messageText');
 const resetButton = document.getElementById('reset');
@@ -25,14 +31,13 @@ resetScoresButton.addEventListener('click', () => {
     resetScores();
 });
 
-
+/*this functions main purpose is to declare the game active and provide the
+ correct player in the MessageText element */
 function startGame() {
-    
-    
     messageText.textContent = `${currentPlayer}'s turn`;
     gameActive = true;
 }
-
+/* */
 function cellClick() {
     const cellIndex = this.getAttribute("index");
 
@@ -58,7 +63,8 @@ function changePlayer() {
     messageText.textContent = `${currentPlayer}'s turn`;
 
 }
-
+/*This function checks every turn for a win condition and calls for an increase to score to show the user, if neither
+player win is true then a tie is decided, changes player after every runtime if game active  */
 function checkWinner() {
     for (let i = 0; i < winningCombos.length; i++) {
         const [a, b, c] = winningCombos[i];
@@ -90,7 +96,7 @@ function restartGame() {
 
 }   
 
-function resetScores(event) {
+function resetScores() {
     scores = {
         "X": 0,
         "O": 0
