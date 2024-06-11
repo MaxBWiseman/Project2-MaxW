@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
-    <script src="assets/Javascript/script.js"></script>
+    
 
     <title>Tic Tac Toe!</title>
 </head>
@@ -33,6 +33,7 @@
            
             <section class="gameboard">
             <div id="cellContainer">
+                <div class="cell" cellIndex="0"></div>
                 <div class="cell" cellIndex="1"></div>
                 <div class="cell" cellIndex="2"></div>
                 <div class="cell" cellIndex="3"></div>
@@ -41,12 +42,11 @@
                 <div class="cell" cellIndex="6"></div>
                 <div class="cell" cellIndex="7"></div>
                 <div class="cell" cellIndex="8"></div>
-                <div class="cell" cellIndex="9"></div>
             </div>    
             </section>
             <div class="message">
-                <h2 class="message-text">X's Turn</h2>
-                <button class="reset">Reset</button>
+                <h2 id="messageText" class="message-text">X's Turn</h2>
+                <button id="reset" class="reset">Reset</button>
             </div>
         </div>
        
@@ -54,5 +54,6 @@
 
 
     </main>
+    <script src="assets/Javascript/script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const cells = Array.from(document.getElementsByClassName('cell'));
+const cells = document.getElementsByClassName('cell')[0];
 const messageText = document.getElementById('messageText');
 const resetButton = document.getElementById('reset');
 const winningCombos = [ 
@@ -8,13 +8,11 @@ let gameBoard = ['','','','','','','','',''];
 let currentPlayer = 'X';
 let gameActive = false;
 startGame();
+console.log("game has loaded");
 
 function startGame() {
-    cells.forEach((cell, index) => {
-        cell.setAttribute('index', index);
-        cell.addEventListener('click', cellClick);
-    });
-    resetButton.addEventListener('click', restartGame);
+    
+    
     messageText.textContent = `${currentPlayer}'s turn`;
     gameActive = true;
 }
@@ -45,6 +43,19 @@ function changePlayer() {
 }
 
 function checkWinner() {
+    for (let i = 0; i < winningCombos.length; i++) {
+        const [a, b, c] = winningCombos[i];
+        if(gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+            messageText.textContent = `${currentPlayer} wins!`;
+            gameActive = false;
+            return;
+        }
+    }
+    if(!gameBoard.includes('')) {
+        messageText.textContent = 'Draw!';
+        gameActive = false;
+        return;
+    }
 
 }
 
