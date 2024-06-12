@@ -2,7 +2,7 @@
  declared and score variable, game starts with a fresh array to store the users inputs, startGame
  is called and a quick consolelog to the console just to make sure everything has loaded for dev
  purposes, Event listieners for each individual cell is added on line 23 along with the
- reset and resetscores buttons */
+ reset and resetscores buttons. */
 
 const cells = Array.from(document.getElementsByClassName('cell'));
 const messageText = document.getElementById('messageText');
@@ -82,7 +82,7 @@ function changePlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     messageText.textContent = `${currentPlayer}'s turn`;
     if(computerOpponent && currentPlayer === 'O') {
-        computerMove();
+        setTimeout(computerMove, 320);
     }
 
 }
