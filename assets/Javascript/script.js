@@ -37,7 +37,9 @@ function startGame() {
     messageText.textContent = `${currentPlayer}'s turn`;
     gameActive = true;
 }
-/* */
+/* This function reads the indexes of all the cells , and checks for empty squares
+on the board to tell wether the game is still active or not, and calls for update board
+on the specified cell index*/
 function cellClick() {
     const cellIndex = this.getAttribute("index");
 
