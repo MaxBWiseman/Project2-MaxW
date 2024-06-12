@@ -132,11 +132,11 @@ function resetScores() {
     document.getElementById('O-score').textContent = 0;
 }
 /* this function was reasearched with the help of microsoft CO pilot, this code uses the reduce method to
-iterate the gameboard and create a new array called emptyCells that tells the computer what squares are currentley free
-to take, randomCellIndex selects a random index from emptyCells using Math.random multiplied by the length of
-emptyCells. Mathfloor rounds this number. cellElement purpose is to select the HTML index that matches the randomCellIndex and then 
-update board is called to place an "O" followed by checkWinner. In summary this is a very basic computer opponent that uses random numbers to
-decide its move*/
+iterate the gameboard and create a new array called emptyCells that tells the computer what squares are
+currentley free to take, randomCellIndex selects a random index from emptyCells using Math.random multiplied
+by the length of emptyCells. Mathfloor rounds this number. cellElement purpose is to select the HTML index 
+that matches the randomCellIndex and then update board is called to place an "O" followed by checkWinner.
+In summary this is a very basic computer opponent that uses random numbers to decide its move*/
 function computerMove() {
     let emptyCells = gameBoard.reduce((acc, cell, idx) => cell === '' ? acc.concat(idx) : acc, []);
     let randomCellIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
