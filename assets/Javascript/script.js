@@ -151,3 +151,16 @@ function playerNames() {
 }
 
 
+/*This function is for the AI button, when clicked it changes the class of the button to off or on*/
+const AIoppButton = document.getElementById('AIopp');
+
+AIoppButton.addEventListener('click', () => {
+    if (AIoppButton.classList.contains("on")) {
+        AIoppButton.classList.remove("on");
+        AIoppButton.classList.add("off");
+    } else {
+        AIoppButton.classList.remove("off");
+        AIoppButton.classList.add("on");
+    }
+
+});
