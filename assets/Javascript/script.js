@@ -39,7 +39,7 @@ function startGame() {
 }
 /* This function reads the indexes of all the cells , and checks for empty squares
 on the board to tell wether the game is still active or not, and calls for update board
-on the specified cell index*/
+on the specified cell index by the user*/
 function cellClick() {
     const cellIndex = this.getAttribute("index");
 
@@ -52,21 +52,26 @@ function cellClick() {
     
 
 }
-
+/*This function updates the gameboard array with the current player and updates the cell
+with either X or O depending on the player*/
 function updateBoard(cell, index) {
     gameBoard[index] = currentPlayer;
     cell.textContent = currentPlayer;
     
 
 }
-
+/*This function changes the player after every turn using tenary operator, we also
+collect the current players turn with template literals */
 function changePlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     messageText.textContent = `${currentPlayer}'s turn`;
 
 }
-/*This function checks every turn for a win condition and calls for an increase to score to show the user, if neither
-player win is true then a tie is decided, changes player after every runtime if game active  */
+/*this function loops over all the winningCombos and stores each combination in an array of three
+indices, it check what player has clicked what square to make sure its only x's or o's in a winning
+combo, the winner gets announced with template literals and score is called, if there is not yet a winner
+and the game knows all squares have been taken, a tie is decided, if both winner and tie are false, the 
+game carrys on with changePlayer(), all end game results in gameActive to false  */
 function checkWinner() {
     for (let i = 0; i < winningCombos.length; i++) {
         const [a, b, c] = winningCombos[i];
@@ -86,7 +91,8 @@ function checkWinner() {
     changePlayer();
 
 }
-
+/*This function resets the gameboard array to empty strings, sets the current player to X, and calls for
+gameActive*/
 function restartGame() {
     gameBoard = ['','','','','','','','',''];
     currentPlayer = 'X';
@@ -97,7 +103,7 @@ function restartGame() {
     })
 
 }   
-
+/*This function resets the scores of the players to 0 and updates the textContent of the score elements*/
 function resetScores() {
     scores = {
         "X": 0,
