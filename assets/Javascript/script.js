@@ -49,7 +49,7 @@ function startGame() {
 on the board to tell wether the game is still active or not, and calls for update board
 on the specified cell index by the user*/
 function cellClick() {
-    const cellIndex = this.getAttribute("index");
+    const cellIndex = this.getAttribute("tabindex");
 
     if(gameBoard[cellIndex] !== '' || !gameActive) {
         return;
@@ -62,8 +62,8 @@ function cellClick() {
 }
 /*This function updates the gameboard array with the current player and updates the cell
 with either X or O depending on the player*/
-function updateBoard(cell, index) {
-    gameBoard[index] = currentPlayer;
+function updateBoard(cell, tabindex) {
+    gameBoard[tabindex] = currentPlayer;
     cell.textContent = currentPlayer;
     
 
@@ -133,7 +133,7 @@ decide its move*/
 function computerMove() {
     let emptyCells = gameBoard.reduce((acc, cell, idx) => cell === '' ? acc.concat(idx) : acc, []);
     let randomCellIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
-    let cellElement = document.querySelector(`[index="${randomCellIndex}"]`);
+    let cellElement = document.querySelector(`[tabindex="${randomCellIndex}"]`);
     updateBoard(cellElement, randomCellIndex);
     checkWinner();
 }
