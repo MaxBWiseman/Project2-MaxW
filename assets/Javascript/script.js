@@ -17,6 +17,11 @@ let scores = {
 }
 let gameBoard = ['','','','','','','','',''];
 let currentPlayer = 'X';
+let computerOpponent = false;
+document.getElementById('AIopp').addEventListener('click', () => {
+    computerOpponent = !computerOpponent;
+    console.log(computerOpponent);
+});
 let gameActive = false;
 startGame();
 console.log("game has loaded");
