@@ -83,3 +83,7 @@ body {
     background-color: green;
     color: blue;
 }
+
+.changeName {
+    margin-left: 25px;
+}

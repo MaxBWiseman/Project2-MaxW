@@ -8,9 +8,13 @@ const cells = Array.from(document.getElementsByClassName('cell'));
 const messageText = document.getElementById('messageText');
 const resetButton = document.getElementById('reset');
 const resetScoresButton = document.getElementById('resetScore');
+const playerXNameInput = document.getElementById('playerName');
+const playerONameInput = document.getElementById('playerName2');
 const winningCombos = [ 
     [0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6], [1, 4, 7], [2, 5, 8],[0, 4, 8], [2, 4, 6]
 ];
+let playerText = document.getElementById('player-text1');
+let playerText2 = document.getElementById('player-text2');
 let scores = {
     "X": 0,
     "O": 0
