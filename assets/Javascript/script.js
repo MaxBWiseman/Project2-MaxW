@@ -125,4 +125,9 @@ function resetScores() {
     document.getElementById('O-score').textContent = 0;
 }
 
+function computerMove() {
+    let emptyCells = gameBoard.reduce((acc, cell, idx) => cell === '' ? acc.concat(idx) : acc, []);
+    let randomCellIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+}
+
 
