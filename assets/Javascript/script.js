@@ -43,6 +43,9 @@ resetScoresButton.addEventListener('click', () => {
     resetScores();
 });
 
+playerXNameInput.addEventListener('input', playerNames);
+playerONameInput.addEventListener('input', playerNames);
+
 /*this functions main purpose is to declare the game active and provide the
  correct player in the MessageText element */
 function startGame() {
@@ -140,6 +143,11 @@ function computerMove() {
     let cellElement = document.querySelector(`[tabindex="${randomCellIndex}"]`);
     updateBoard(cellElement, randomCellIndex);
     checkWinner();
+}
+
+function playerNames() {
+    playerText.textContent = playerXNameInput.value;
+    playerText2.textContent = playerONameInput.value;
 }
 
 
