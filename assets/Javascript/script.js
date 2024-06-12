@@ -17,6 +17,9 @@ let scores = {
 }
 let gameBoard = ['','','','','','','','',''];
 let currentPlayer = 'X';
+/*This event listener is for the AI button, this is started as false incase local co-op is
+preferred by the user, i use the NOT operator to change between true and false
+, consolelog for debug purposes */
 let computerOpponent = false;
 document.getElementById('AIopp').addEventListener('click', () => {
     computerOpponent = !computerOpponent;
@@ -66,10 +69,14 @@ function updateBoard(cell, index) {
 
 }
 /*This function changes the player after every turn using tenary operator, we also
-collect the current players turn with template literals */
+collect the current players turn with template literals, if computer opponent is true
+then computerMove is called */
 function changePlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     messageText.textContent = `${currentPlayer}'s turn`;
+    if(computerOpponent && currentPlayer === 'O') {
+        computerMove();
+    }
 
 }
 /*this function loops over all the winningCombos and stores each combination in an array of three
