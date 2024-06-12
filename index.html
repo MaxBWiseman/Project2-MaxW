@@ -14,23 +14,27 @@
 <body>
     <main class="background">
         <h1 class="title">Tic Tac Toe</h1>
-
+        <h2 class="scoreboard-text">Scoreboard</h2>
         <div class="container">
             
 
-            <section class="scoreboard">
+         <section class="scoreboard">
+            
+            <div class="player" id="playerO">
+                <h2 class="player-text">Player O</h2>
+                <h3 id="O-score">0</h3>
+            </div>
+            <div id="scoreboard-wrapper">
                 <div class="player" id="playerX">
                     <h2 class="player-text">Player X</h2>
                     <h3 id="X-score">0</h3>
                 </div>
-                <div class="player" id="playerO">
-                    <h2 class="player-text">Player O</h2>
-                    <h3 id="O-score">0</h3>
-                </div>
+                
+            </div>
             </section>
            
 
-           !-- Gameboard 
+           
             <section class="gameboard">
             <div id="cellContainer">
                 <div class="cell" index="0"></div>
