@@ -85,5 +85,6 @@ body {
 }
 
 .changeName {
-    margin-left: 25px;
+   display: block;
+   margin-top: 15px;
 }
