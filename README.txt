@@ -34,14 +34,22 @@ The game logic is implemented in JavaScript. The `checkWinner` function checks i
 
 ![Optional Alt Text](assets/images/my code for readme 1.png)
 
-![Optional Alt Text](assets/images/my code for readme 1.png)
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 184951.png)
 
-![Optional Alt Text](assets/images/my code for readme 1.png)
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185104.png)
 
-![Optional Alt Text](assets/images/my code for readme 1.png)
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185111.png)
 
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185118.png)
 
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185124.png)
 
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185131.png)
 
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185137.png)
 
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185321.png)
 
+![Optional Alt Text](assets/images/Screenshot 2024-06-12 185326.png)
+
+## Lighthouse Report
