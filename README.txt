@@ -108,6 +108,13 @@ I have checked all validators and made sure there are no left over mistakes
 
 Or click the link above!
 
+## Credits
+
+Credits to microsoft co pilot for help with the Computer opponent logic
+
+
+Thanks for reading, Max Wiseman
+
 
 
 
