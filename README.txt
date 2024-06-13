@@ -53,3 +53,7 @@ The game logic is implemented in JavaScript. The `checkWinner` function checks i
 ![Optional Alt Text](assets/images/Screenshot 2024-06-12 185326.png)
 
 ## Lighthouse Report
+
+![Optional Alt Text](assets/images/lighthouse report.png)
+
+
