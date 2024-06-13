@@ -1,6 +1,7 @@
 # Tic Tac Toe Game
 
-This is a simple Tic Tac Toe game implemented in JavaScript, HTML, and CSS. The game allows two players to play against each other, and also provides an option to play against a computer opponent.
+This is a simple Tic Tac Toe game implemented in JavaScript, HTML, and CSS. The game allows two
+players to play against each other, and also provides an option to play against a computer opponent.
 
 ## Features
 
@@ -20,9 +21,29 @@ This is a simple Tic Tac Toe game implemented in JavaScript, HTML, and CSS. The 
 6. To start a new game, click the "New Game" button.
 7. To reset the scores, click the "Reset Scores" button.
 
-## Code Overview
+## Javascript Code Overview
 
-The game logic is implemented in JavaScript. The `checkWinner` function checks if there is a winner after each move. The `computerMove` function implements the logic for the computer opponent, which selects a random empty cell for its move. The `restartGame` and `resetScores` functions implement the game reset and score reset functionality, respectively.
+1. Winning Condition Check: The code checks if there's a winning combination on the game board. If a player has won,
+it updates the message text, increments the player's score, updates the score display, and sets gameActive to false.
+
+2. Draw Condition Check: If there are no empty cells left on the game board and no player has won, it declares the
+game as a draw, updates the message text, and sets gameActive to false.
+
+3. Player Change: If the game is still active and there's no winner or draw, it changes the current player.
+
+4. Game Restart: The restartGame function resets the game board to an empty state, sets the current player to 'X',
+and makes the game active again. It also updates the display to show that it's player X's turn.
+
+5. Score Reset: The resetScores function resets the scores of both players to 0 and updates the score display.
+
+6. Computer Move: The computerMove function is used when playing against the computer. It finds all the empty cells,
+selects one at random, and makes a move there.
+
+7. Player Names: The playerNames function updates the display with the names of the players.
+
+8. AI Toggle: The code at the end toggles the AI opponent on and off when the corresponding button is clicked.
+It changes the class of the button to reflect the current state.
+
 
 ## Future Improvements
 
@@ -54,6 +75,39 @@ The game logic is implemented in JavaScript. The `checkWinner` function checks i
 
 ## Lighthouse Report
 
+My lighthouse report is only slightly let down by color contrast
+
 ![Optional Alt Text](assets/images/lighthouse report.png)
+
+## Validation Proof
+
+I have checked all validators and made sure there are no left over mistakes
+
+![Optional Alt Text](assets/images/CSS validator.png)
+
+![Optional Alt Text](assets/images/assets/images/html validator.png)
+
+![Optional Alt Text](assets/images/javascript validation.png)
+
+
+## Unfixed Bugs
+
+- None am aware of
+
+## Deployment
+
+- This site was deployed to GitHub Pages
+
+- In the repository navigate to the setting tab
+
+- From the source section drop down menu select the master branch
+
+- Once the master branch has been selected, the page provided the link to the completed website
+
+= https://maxbwiseman.github.io/Project2-MaxW/
+
+Or click the link above!
+
+
 
 
