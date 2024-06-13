@@ -121,13 +121,13 @@ function restartGame() {
         cell.textContent = '';
     })
 
-}   
+};   
 /*This function resets the scores of the players to 0 and updates the textContent of the score elements*/
 function resetScores() {
     scores = {
         "X": 0,
         "O": 0
-    }
+    };
     document.getElementById('X-score').textContent = 0;
     document.getElementById('O-score').textContent = 0;
 }
