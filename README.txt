@@ -112,6 +112,9 @@ Or click the link above!
 
 Credits to microsoft co pilot for help with the Computer opponent logic
 
+Credits to "Bro Code" youtuber for having a video with helpfull insights on how to create a tictactoe game
+https://www.youtube.com/watch?v=AnmwHjpEhtA
+
 
 Thanks for reading, Max Wiseman
 
