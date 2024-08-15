@@ -87,7 +87,7 @@ function changePlayer() {
 
 }
 /*this function loops over all the winningCombos and stores each combination in an array of three
-indices, it check what player has clicked what square to make sure its only x's or o's in a winning
+indices using deconstructing, it check what player has clicked what square to make sure its only x's or o's in a winning
 combo.
 
 The if statement, which was one of the most complicated parts of this game, checks the following:
