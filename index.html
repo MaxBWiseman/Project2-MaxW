@@ -13,36 +13,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
-    
-
     <title>Tic Tac Toe Project</title>
-
 </head>
 <body>
+    <!--Main Title-->
     <main class="background">
         <h1 class="title">Tic Tac Toe</h1>
+        <!--Button for AI opponent-->
         <button id="AIopp">Play Against Computer</button>
         <div class="container">
-            
-
-         <section class="scoreboard">
-            
-            <div class="player" id="playerO">
-                <h2 id="player-text1">Player O</h2>
-                <h3 id="O-score">0</h3>
-            </div>
-            <div id="scoreboard-wrapper">
-                <div class="player" id="playerX">
-                    <h2 id="player-text2">Player X</h2>
-                    <h3 id="X-score">0</h3>
+            <!--Scoreboard-->
+            <section class="scoreboard">
+                <div class="player" id="playerO">
+                    <h2 id="player-text1">Player O</h2>
+                    <h3 id="O-score">0</h3>
                 </div>
-                
-            </div>
+                <div id="scoreboard-wrapper">
+                    <div class="player" id="playerX">
+                        <h2 id="player-text2">Player X</h2>
+                        <h3 id="X-score">0</h3>
+                    </div>
+                </div>
             </section>
-           
-
-           
-            
+            <!--Gameboard-->
             <div id="cellContainer">
                 <div class="cell" tabindex="0"></div>
                 <div class="cell" tabindex="1"></div>
@@ -53,23 +46,22 @@
                 <div class="cell" tabindex="6"></div>
                 <div class="cell" tabindex="7"></div>
                 <div class="cell" tabindex="8"></div>
-            </div>    
-            
+            </div>
+            <!--Game message-->
             <div class="message">
                 <h2 id="messageText" class="message-text">X's Turn</h2>
+                <!--Game reset and new Game buttons-->
                 <button id="reset" class="reset">New Game</button>
                 <button id="resetScore" class="reset">Reset Score</button>
             </div>
         </div>
-        <label for ="playerName" class="changeName">Player 1's Name</label>
+        <!--Player name customizer-->
+        <label for="playerName" class="changeName">Player 1's Name</label>
         <input type="text" id="playerName" placeholder="Enter your name">
-        <label for ="playerName2" class="changeName">Player 2's Name</label>
+        <label for="playerName2" class="changeName">Player 2's Name</label>
         <input type="text" id="playerName2" placeholder="Enter your name">
-       
-
-
-
     </main>
+    <!--Javascript-->
     <script src="assets/javascript/script.js"></script>
 </body>
 </html>
