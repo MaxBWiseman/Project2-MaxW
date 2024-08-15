@@ -68,12 +68,6 @@ It changes the class of the button to reflect the current state.
 ### Board being played
 ![Optional Alt Text](assets/images/gameshot8.png)
 
-## Future Improvements
-
-- Improve the AI for the computer opponent to make it more challenging.
-- Add animations for winning and losing.
-- Add the ability to choose which player goes first.
-
 ## A look at some of the code within
 
 ![Optional Alt Text](assets/images/codeshot1.png)
@@ -160,6 +154,13 @@ I have checked all validators and made sure there are no left over mistakes
 this was confusing for the user, so i added a small delay to make it clearer who is what player on the board.
 
 - If a very long name is used, it might overlap some items on the page
+
+## Future Improvements
+
+- Improve the AI for the computer opponent to make it more challenging.
+- Add animations for winning and losing.
+- Add the ability to choose which player goes first.
+
 
 ## Deployment
 
