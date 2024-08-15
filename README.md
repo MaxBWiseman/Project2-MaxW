@@ -125,13 +125,16 @@ It changes the class of the button to reflect the current state.
 |Custom name was used |100%  |
 |AI opponent was able to win| 100%|
 
-## Responsive testing
+## Responsive testing pictures
 
-### Personally tested
+### My project was desinged with mobile first in mind, with the use of flexbox my project works on any screen.
 
-| Test | Result |
-|--|--|
-|Issues Reported| None|
+### <u>Mobile view</u>
+![Optional Alt Text](assets/images/mobileview.png)
+### <u>Tablet view</u>
+![Optional Alt Text](assets/images/tabletview.png)
+### <u>Large screen view</u>
+![Optional Alt Text](assets/images/largescreenview.png)
 
 
 ## Lighthouse Report
@@ -207,19 +210,6 @@ Or click the link above!
 - Deploy from the latest branch (or an older one if desire)
 
 - Press "Save", your pages link should show on the "Pages" tab in 3 minutes or less
-
-
-
-## Responsiveness 
-
-### My project was desinged with mobile first in mind, with the use of flexbox my project works on any screen.
-
-### Mobile view
-![Optional Alt Text](assets/images/mobileview.png)
-### Tablet view
-![Optional Alt Text](assets/images/tabletview.png)
-### Large screen view
-![Optional Alt Text](assets/images/largescreenview.png)
 
 ## Credits
 
