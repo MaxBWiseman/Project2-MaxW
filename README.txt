@@ -1,5 +1,10 @@
 # Tic Tac Toe Game
 
+<p align="center">
+    <!--     You can add your logo in the _src_ below -->
+    <img src="assets/images/project2-maxw.jpeg" />
+</p>
+
 This is a simple Tic Tac Toe game implemented in JavaScript, HTML, and CSS. The game allows two
 players to play against each other, and also provides an option to play against a computer opponent.
 
@@ -132,9 +137,6 @@ Or click the link above!
 ![Optional Alt Text](assets/images/tabletview.png)
 ### Large screen view
 ![Optional Alt Text](assets/images/largescreenview.png)
-
-### Mobile
-
 
 ## Credits
 
