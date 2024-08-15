@@ -98,7 +98,7 @@ I have checked all validators and made sure there are no left over mistakes
 
 ![Optional Alt Text](assets/images/cssvalidator.png)
 
-![Optional Alt Text](assets/images/assets/images/htmlvalidator.png)
+![Optional Alt Text](assets/images/htmlvalidator.png)
 
 ![Optional Alt Text](assets/images/javascriptvalidation.png)
 
@@ -121,6 +121,20 @@ this was confusing for the user, so i added a small delay to make it clearer who
 = https://maxbwiseman.github.io/Project2-MaxW/
 
 Or click the link above!
+
+## Responsiveness 
+
+### My project was desinged with mobile first in mind, with the use of flexbox my project works on any screen.
+
+### Mobile view
+![Optional Alt Text](assets/images/mobileview.png)
+### Tablet view
+![Optional Alt Text](assets/images/tabletview.png)
+### Large screen view
+![Optional Alt Text](assets/images/largescreenview.png)
+
+### Mobile
+
 
 ## Credits
 
