@@ -19,7 +19,7 @@ players to play against each other, and also provides an option to play against 
 
 ## How to Play
 
-1. Open the game in your web browser.
+1. Open the game in your web browser.(Look at deployment below for intructions)
 2. If you want to play against the computer, click the "AI Opponent" button to turn it on.
 3. Click on the cells of the game board to make your move.
 4. The game will automatically detect when a player has won or when the game is a draw.
