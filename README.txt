@@ -90,9 +90,10 @@ I have checked all validators and made sure there are no left over mistakes
 ![Optional Alt Text](assets/images/javascript validation.png)
 
 
-## Unfixed Bugs
+## Bugs
 
-- None am aware of
+- There was a bug where the computer opponent would place its mark instantly after the players choice,
+this was confusing for the user, so i added a small delay to make it clearer who is what player on the board.
 
 ## Deployment
 

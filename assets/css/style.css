@@ -1,24 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
+/* fonts */
 .tiny5-regular {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
-
 * {
     font-family: "Tiny5", Arial, Helvetica, sans-serif;
 }
-
-
 
 body {
     background-color: beige;
     text-align: center;
    
 }
-
+/* board cells */
 .cell {
     width:75px;
     height:75px;
@@ -40,7 +38,7 @@ body {
     width:225px;
     margin:auto;
 }
-
+/* score */
 .scoreboard {
     font-size:2.3vh;
     font-weight: bold;
@@ -50,7 +48,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
+/* AI button */
 #AIopp {
     font-size: 1.6vh;
     font-weight: bold;
@@ -74,7 +72,7 @@ body {
     background-color: #f44336;
     color: #F7FF00;
 }
-
+/* reset board */
 .reset {
     font-size: 2.3vh;
     font-weight: bold;
@@ -93,7 +91,7 @@ body {
     background-color: green;
     color: blue;
 }
-
+/* custom names */
 .changeName {
    display: block;
    margin-top: 15px;
