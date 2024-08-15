@@ -92,6 +92,48 @@ It changes the class of the button to reflect the current state.
 
 ![Optional Alt Text](assets/images/codeshot9.png)
 
+
+<a name="testing"></a>
+
+# Testing
+
+### Testing on this project was mainly done manually by myself
+
+## Testing game
+| Test |Outcome  |
+|--|--|
+|AI oppenent| Pass |
+|Reset score and New game| Pass|
+|Custom names| Pass|
+|Gameboard| Pass|
+|Winning combos | Pass|
+|Draw |Pass|
+
+## Testing for responsiveness
+| Test |Outcome  |
+|--|--|
+|Home pagedisplays correctly on screens larger than 950px|Pass |
+|Home pagedisplays correctly on screens smaller than 950px |Pass  
+
+## User testing
+
+### I let my Mum have a go at playing and found that - 
+
+| Test | Result |
+|--|--|
+|Upon arrival to website AI oppenent was found and used| 100%|
+|Custom name was used |100%  |
+|AI opponent was able to win| 100%|
+
+## Responsive testing
+
+### Personally tested
+
+| Test | Result |
+|--|--|
+|Issues Reported| None|
+
+
 ## Lighthouse Report
 
 My lighthouse report is only slightly let down by color contrast
