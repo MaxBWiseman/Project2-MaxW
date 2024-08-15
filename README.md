@@ -127,6 +127,44 @@ this was confusing for the user, so i added a small delay to make it clearer who
 
 Or click the link above!
 
+### If you wish to download as a zip file
+
+- Navigate to the Code dropdown near the about section for the project
+
+- Download Zip at the bottom of the drop down
+
+- Find the download location and extract all from the zip file
+
+- Open a editor like VS code
+
+- Press Explorer and select "Open File"
+
+- Navigate to the download location of the extracted zip file
+
+- Click into the folder until the title is not showing as a file
+
+- Open Folder in the bottom right
+
+- Either use the "Live Server" Extension  by Ritwick Dey to easily start a server on the bottom right of the editor with "Go Live" button (Extension must be installed)
+
+- Or boot a local server with python aslong as its installed on your machine  with - "python3 -m http.server" inside the terminal (ctrl-j)
+
+### Github Fork
+
+- You may fork the repository into your own with the "Fork" button on this projects github page
+
+- Navigate to your repositorys and clicki on your fork of this project
+
+- Navigate on the top bar to "Settings"
+
+- Then to "Pages"
+
+- Deploy from the latest branch (or an older one if desire)
+
+- Press "Save", your pages link should show on the "Pages" tab in 3 minutes or less
+
+
+
 ## Responsiveness 
 
 ### My project was desinged with mobile first in mind, with the use of flexbox my project works on any screen.
@@ -140,11 +178,18 @@ Or click the link above!
 
 ## Credits
 
-Credits to microsoft co pilot for help with the Computer opponent logic
+### Credits to Microsoft Co Pilot for help with the computer opponent logic, this is what I have learned -
+this function was reasearched with the help of microsoft CO pilot, this code uses the reduce method to
+iterate the gameboard and create a new array called emptyCells that tells the computer what squares are
+currentley free to take, randomCellIndex selects a random index from emptyCells using Math.random multiplied
+by the length of emptyCells. Mathfloor rounds this number. cellElement purpose is to select the HTML index 
+that matches the randomCellIndex and then update board is called to place an "O" followed by checkWinner.
+In summary this is a very basic computer opponent that uses random numbers to decide its move
 
 Credits to "Bro Code" youtuber for having a video with helpfull insights on how to create a tictactoe game
 https://www.youtube.com/watch?v=AnmwHjpEhtA
 
+No third party images were used in this project
 
 Thanks for reading, Max Wiseman
 
