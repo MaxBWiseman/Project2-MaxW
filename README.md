@@ -15,6 +15,7 @@ players to play against each other, and also provides an option to play against 
 - Score tracking
 - Game reset functionality
 - Option to toggle computer opponent on and off
+- Custom player name
 
 ## How to Play
 
@@ -186,10 +187,15 @@ by the length of emptyCells. Mathfloor rounds this number. cellElement purpose i
 that matches the randomCellIndex and then update board is called to place an "O" followed by checkWinner.
 In summary this is a very basic computer opponent that uses random numbers to decide its move
 
-Credits to "Bro Code" youtuber for having a video with helpfull insights on how to create a tictactoe game
+### Credits to "Bro Code" youtuber for having a video with helpfull insights on how to create a tictactoe game -
+
 https://www.youtube.com/watch?v=AnmwHjpEhtA
 
-No third party images were used in this project
+### Fonts are credited to Google Fonts API -
+
+https://fonts.googleapis.com/css2?family=Tiny5&display=swap
+
+### No third party images were used in this project
 
 Thanks for reading, Max Wiseman
 

@@ -54,7 +54,7 @@ function startGame() {
 }
 /* This function reads the indexes of all the cells , and checks for empty squares
 on the board to tell wether the game is still active or not, and calls for update board
-on the specified cell index by the user*/
+on the specified cell index by the user and also checks for a win or draw*/
 function cellClick() {
     const cellIndex = this.getAttribute("tabindex");
 
@@ -77,7 +77,7 @@ function updateBoard(cell, tabindex) {
 }
 /*This function changes the player after every turn using tenary operator, we also
 collect the current players turn with template literals, if computer opponent is true
-then computerMove is called */
+then computerMove is called with a added delay for user clarity */
 function changePlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     messageText.textContent = `${currentPlayer}'s turn`;
@@ -88,7 +88,14 @@ function changePlayer() {
 }
 /*this function loops over all the winningCombos and stores each combination in an array of three
 indices, it check what player has clicked what square to make sure its only x's or o's in a winning
-combo, the winner gets announced with template literals and score is called, if there is not yet a winner
+combo.
+
+The if statement, which was one of the most complicated parts of this game, checks the following:
+The cell at index a is not empty.
+The cell at index a has the same value as the cell at index b.
+The cell at index a has the same value as the cell at index c.
+
+the winner gets announced with template literals and score is called, if there is not yet a winner
 and the game knows all squares have been taken, a tie is decided, if both winner and tie are false, the 
 game carrys on with changePlayer(), all end game results in gameActive to false  */
 function checkWinner() {
@@ -144,12 +151,11 @@ function computerMove() {
     updateBoard(cellElement, randomCellIndex);
     checkWinner();
 }
-
+/*This function is for the player names, it grabs the value of the input fields and updates the playerText*/
 function playerNames() {
     playerText.textContent = playerXNameInput.value;
     playerText2.textContent = playerONameInput.value;
 }
-
 
 /*This function is for the AI button, when clicked it changes the class of the button to off or on*/
 const AIoppButton = document.getElementById('AIopp');
