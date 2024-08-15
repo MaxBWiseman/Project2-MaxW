@@ -44,6 +44,23 @@ selects one at random, and makes a move there.
 8. AI Toggle: The code at the end toggles the AI opponent on and off when the corresponding button is clicked.
 It changes the class of the button to reflect the current state.
 
+## Gameboard Pictures
+### The main title and AI switch button
+![Optional Alt Text](assets/images/gameshot1.png)
+### Scoreboard
+![Optional Alt Text](assets/images/gameshot2.png)
+### That can be changed
+![Optional Alt Text](assets/images/gameshot3.png)
+### Main playing area
+![Optional Alt Text](assets/images/gameshot4.png)
+### New game and reset score buttons
+![Optional Alt Text](assets/images/gameshot5.png)
+### Optional fields to enter player names
+![Optional Alt Text](assets/images/gameshot6.png)
+### Whole board together
+![Optional Alt Text](assets/images/gameshot7.png)
+### Board being played
+![Optional Alt Text](assets/images/gameshot8.png)
 
 ## Future Improvements
 
@@ -51,43 +68,39 @@ It changes the class of the button to reflect the current state.
 - Add animations for winning and losing.
 - Add the ability to choose which player goes first.
 
-## Code Screenshots with Comments
+## A look at some of the code within
 
-![Optional Alt Text](assets/images/my code for readme 1.png)
+![Optional Alt Text](assets/images/codeshot1.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 184951.png)
+![Optional Alt Text](assets/images/codeshot2.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185104.png)
+![Optional Alt Text](assets/images/codeshot3.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185111.png)
+![Optional Alt Text](assets/images/codeshot5.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185118.png)
+![Optional Alt Text](assets/images/codeshot6.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185124.png)
+![Optional Alt Text](assets/images/codeshot7.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185131.png)
+![Optional Alt Text](assets/images/codeshot8.png)
 
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185137.png)
-
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185321.png)
-
-![Optional Alt Text](assets/images/Screenshot 2024-06-12 185326.png)
+![Optional Alt Text](assets/images/codeshot9.png)
 
 ## Lighthouse Report
 
 My lighthouse report is only slightly let down by color contrast
 
-![Optional Alt Text](assets/images/lighthouse report.png)
+![Optional Alt Text](assets/images/lighthousereport.png)
 
 ## Validation Proof
 
 I have checked all validators and made sure there are no left over mistakes
 
-![Optional Alt Text](assets/images/CSS validator.png)
+![Optional Alt Text](assets/images/cssvalidator.png)
 
-![Optional Alt Text](assets/images/assets/images/html validator.png)
+![Optional Alt Text](assets/images/assets/images/htmlvalidator.png)
 
-![Optional Alt Text](assets/images/javascript validation.png)
+![Optional Alt Text](assets/images/javascriptvalidation.png)
 
 
 ## Bugs
